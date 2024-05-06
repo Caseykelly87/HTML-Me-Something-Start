@@ -1,1 +1,63 @@
-/* Write your CSS here! */
+
+#mainHeading {
+    color: red;
+    font-size: 75px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+
+#mainTitle{color: white;}
+
+body {
+    margin: 8px;
+    display: block;
+    background-image: url(images/backroundClips.png);
+    text-align: center;
+    background-size: cover;
+    color: white;
+    font-style:Bold;
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: xxx-large;
+    font-variant: small-caps;
+}
+
+a {color: yellowgreen;}
+
+.funParagraph {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color: green;
+    margin: 50px;
+}
+
+#testP {color: white;}
+#navInstruction{color: white;}
+#vidInstruction{color: white;}
+#outro{color: white;}
+
+#howToList{
+    display:inline-block;
+    text-align: left;
+    
+}
+
+#stepList {
+    display: inline-block;
+    position:relative;
+    left: 165px;
+}
+
+.directions{
+    font-size: xx-large;
+    padding: 50px;
+}
+
+#videoTitle{
+    font-size: 75px;
+    font-variant: small-caps;    
+}
+
+footer {font-size: x-large;}
+

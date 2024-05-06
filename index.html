@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      
-      <title>"Your first Pro Tools session"</title>
-   
-   </head>
-   <body>
-      <header>
-      
-         <h1 id="mainHeading">Welcome to your first Pro Tools session</h1>
-   
-      </header>
-      <main>
-         <article>
+<html lang="eng">
 
-            <div id="intro">
-               <p id="testP" class="funParagraph">
-                  Today we are going to record your first ever song on Pro Tools. 
-                  This turorial does make some assumtions, for instance, You have already 
-                  installed the software and have the input output settings <br>working with your 
-                  microphone and chosen "monitors", whether they are headphones or speakers. Keep 
-                  in mind that you cannot have your microphone and speakers active at the same time 
-                  if <br>they are in the same space. We will also assume that you are recording vocals 
-                  for an instrumental file that's already accessible on your computer, preferably a <em>.WAV</em>
-                  for best audio quality.<br>
-               
-                  <br>Now that your studio is ready let's look at how to create a new project and start recording! 
-                  You can click on the numbered the tasks to jump to that point, most tasks have multiple steps.<br>
-               
-                  <br>There is also a two minute video tutorial at the bottom of this page that shows the process in action! <a href="#videoTutorial">Jump to video</a> 
+   <head>
+      <link rel="stylesheet" href="styles.css">
+      <title>"Your first Pro Tools session"</title>
+   </head>
+
+<body>
+
+   <header>
+      
+      <h1 id="mainHeading"><p id="mainTitle">Welcome to your first Pro Tools<sup>&reg;</sup> session</p></h1>
+            
+   </header>
+   <main>
+
+      <article>
+
+         <div id="intro" class="introduction">
+
+            <p id="testP" class="funParagraph">
+               Today we are going to record your first ever song on Pro Tools. 
+               This turorial does make some assumtions, for instance, You have already 
+               installed the software have the input output settings working with your 
+               microphone and chosen "monitors", whether they are headphones or speakers. Keep 
+               in mind that you cannot have your microphone and speakers active at the same time 
+               if they are in the same space. We will also assume that you are recording vocals 
+               for an instrumental file that's already accessible on your computer, preferably a <em>.WAV</em>
+               for best audio quality.
+            </p>
+            <div class="introduction">
+
+               <p id="navInstruction" class="funParagraph">
+                  Now that your studio is ready let's look at how to create a new project and start recording! 
+                  You can click on the numbered the tasks to jump to that point, most tasks have multiple steps.
                </p>
             </div>
 
-            <div id="howToList">
+            <p id="vidInstruction" class="funParagraph">
+               There is also a two minute video tutorial at the bottom of this page that shows the process in 
+               action!<br> <a href="#videoTutorial">Jump to video</a> 
+            </p>
+         </div>
+
+
+         <div id="howToList">
                  
-               <h2 >How to record your first song</h2>
-                 
+            <h2 >How to record your first song</h2>
+             
+            <div id="stepList">
                <ol>
                   <li><a href="#createSession">Create new session</a>
                      <ul>
                         <li>Name your session</li>
                         <li>Confirm session parameters</li>
                      </ul></li>
-               
+              
                   <li><a href="#importAudio">Import Audio</a>
                      <ul>
                         <li>Locate audio file</li>
@@ -52,8 +65,8 @@
                   <li><a href="#createTracks">Create new Tracks</a>
                      <ul>
                         <li>Select new track settings</li>
-                  </ul></li>
-            
+                     </ul></li>
+          
                   <li><a href="#enableRecording">Enable recording</a></li>
                      <ul>
                         <li>Enable track recording</li>
@@ -62,165 +75,172 @@
                
                   <li><a href="#record">Record!</a></li>
                </ol>
+            </div>   
+         </div>
+
+
+         <div id="allSteps" class="stepByStep">
+   
+            <div id="createSession" class="step">      
+      
+               <h2>Create your new session</h2>
+
+               <p class="directions">Enter the name of your project into the <em>Name:</em> field. Now ensure that the set parameters for: 
+                  <em>File Type, Sample Rate, Bit Depth and I/O Settings</em> are appropriate for your project.
+                  Don't forget to verify that the <em>Location</em> where the file will be saved is correct before clicking <em>Create</em>.
+               </p>   
+               <img
+                  src="images/01Create New Session.png" 
+                  width="1200" 
+                  alt="Screenshot of create new session window."/>
+      
+               <p class="directions"><br>This is your empty session. Next let's add the instumental, unless your signing acapella today?</p><br>
+              <img
+                  src="images/02Empty Session.png" 
+                  width="1200" 
+                  alt="Screenshot of empty Pro-Tools session."/>
             </div>
 
-            <div id="allSteps" class="stepByStep">
+            <div id="importAudio" class="step">
    
-               <div id="createSession" class="step">      
+               <h2>Import Audio</h2>
       
-                  <h2>Create your new session</h2>
+               <p class="directions">Navigate to <em>File</em> in the top left corner of the screen, go down the menu list and hover on <em>Import</em>
+                  a sub-menu will open, click <em>Audio</em> in that window.</p>
+               <img 
+                  src="images/03Import Audio.png" 
+                  width="1200" 
+                  alt="Screenshot navigating through File to Import to Audio."/>
 
-                  <p class="directions">Type the name of your project into the <em>Name:</em> bar. Now ensure that the set parameters for: 
-                     <em>File Type, Sample Rate, Bit Depth and I/O Settings</em> are appropriate for your project.<br>
-                     Don't forget to verify that the <em>Location</em> wher the file will be saved is correct before clicking <em>Create</em>.
-                  </p>   
-                  <img 
-                     src="images/01Create New Session.png" 
-                     width="1200" 
-                     alt="Screenshot of create new session window."/>
+               <p class="directions">Using the <em>Look in:</em> bar at the top of the Import Audio window locate the desired audio file.</p>
+               <img
+                  src="images/04Locate Instrumental.png" 
+                  width="1200" 
+                  alt="Screenshot using look in bar to locate folder with audio file."/>
       
-                  <p class="directions"><br>This is your empty session. Next let's add the instumental, unless your signing acapella today?</p><br>
-                 <img
-                     src="images/02Empty Session.png" 
-                     width="1200" 
-                     alt="Screenshot of empty Pro-Tools session."/>
-               </div>
+               <p class="directions">Before you select the file that you wish to import. Notice the two large empty fields on this window. Both 
+                  empty fields need to contain the file intended for import. If you double click on your audio file it will automatically 
+                  convert and occupy both fields, otherwise use next step to convert. </p>
+               <img
+                  src="images/05Select Instrumental.png" 
+                  width="1200" 
+                  alt="Screenshot selecting the instumental."/>
 
-               <div id="importAudio" class="step">
-   
-                  <h2>Import Audio</h2>
-      
-                  <p class="directions">Navigate to <em>File</em> in the top left corner of the screen, go down the menu list and hover on <em>Import</em>
-                     now in the sub_menu that opens click <em>Audio</em>.</p>
-                  <img 
-                     src="images/03Import Audio.png" 
-                     width="1200" 
-                     alt="Screenshot navigating through File to Import to Audio."/>
+               <p class="directions">Convert the file by selecting it in middle window and clicking <em>Convert Clip</em>.</p> 
+               <img
+                  src="images/06Converting Instrumental.png" 
+                  width="1200" 
+                  alt="Screenshot converting the instumental for import."/>
 
-                  <p class="directions">Using the <em>Look in:</em> bar at the top of the Import Audio window locate the desired audio file.</p>
-                  <img 
-                     src="images/04Locate Instrumental.png" 
-                     width="1200" 
-                     alt="Screenshot using look in bar to locate folder with audio file."/>
-      
-                  <p class="directions">Before you select the file that you wish to import. Notice the two large empty fields on this window. Both 
-                     empty fields need to contain the file intended for import. If you double click on <br>your audio file it will automatically 
-                     convert and occupy both fields, otherwise use next step to convert. </p>
-                  <img 
-                     src="images/05Select Instrumental.png" 
-                     width="1200" 
-                     alt="Screenshot selecting the instumental."/>
+               <p class="directions">Now that the file is converted you should see the file name three times total, one in each window, it's time to import. Click <em>Done</em>.</p>
+               <img
+                  src="images/07Instrumental Converted.png"  
+                  width="1200" 
+                  alt="Screenshot instumental converted and file occupies all three windows"/>
 
-                  <p class="directions">Convert the file by selecting it in middle window and clicking <em>Convert Clip</em>.</p> 
-                  <img 
-                     src="images/06Converting Instrumental.png" 
-                     width="1200" 
-                     alt="Screenshot converting the instumental for import."/>
+               <p class="directions">Set the destination for the converted audio to be stored. It should default to the <em>Audio Files</em> 
+                  folder of the session. Be sure to click the <em>Use Current Folder</em> button NOT the <em>Open</em> button</p>
+               <img
+                  src="images/08Audio Import Destination Folder.png" 
+                  width="1200" 
+                  alt="Screenshot of choose destination folder window."/>
 
-                  <p class="directions">Now that the file is converted you should see the file name three times total, one in each window, it's time to import. Click <em>Done</em>.</p>
-                  <img 
-                     src="images/07Instrumental Converted.png"  
-                     width="1200" 
-                     alt="Screenshot instumental converted and file occupies all three windows"/>
+               <p class="directions">Choose <em>New Track</em> option and click <em>OK</em>.</P>
+               <img
+                  src="images/09Audio Import Options.png" 
+                  width="1200" 
+                  alt="Screenshot of Audio Import Options window."/>
 
-                  <p class="directions">Set the destination for the converted audio to be stored. It should default to the <em>Audio Files</em> 
-                     folder of the session. Be sure to click the <em>Use Current Folder</em> button NOT the <em>Open</em> button</p>
-                  <img 
-                     src="images/08Audio Import Destination Folder.png" 
-                     width="1200" 
-                     alt="Screenshot of choose destination folder window."/>
-
-                  <p class="directions">Choose <em>New Track</em> option and click <em>OK</em>.</P>
-                  <img 
-                     src="images/09Audio Import Options.png" 
-                     width="1200" 
-                     alt="Screenshot of Audio Import Options window."/>
-
-                  <p class="directions">Here is your session with the instrumental track! Next let's add some empty tracks for your voice.</p>
-                  <img 
-                     src="images/10Instrumental Imported.png" 
-                     width="1200" 
-                     alt="Screenshot of a Pro tools session with one instumental track."/>
-               </div>
-   
-               <div id="createTracks" class="step">
-
-                  <h2>Create New Tracks</h2>
-
-                  <p class="directions">To create more tracks for you to record on navigate to the <em>Track</em> menu at the top of the page. Then click <em>New</em>.</p>
-                  <img 
-                     src="images/11Creating New Tracks.png" 
-                     width="1200" 
-                     alt="Screenshot navigating through Track to New."/>
-
-                  <p class="directions">Decide on the number of tracks to create and set appropriate parameters. Click <em>Create</em>.</p>
-                  <img 
-                     src="images/12New Track Options.png" 
-                     width="1200" 
-                     alt="Screenshot of New tracks window."/>
-
-                  <p class="directions">Here is your session ready for vocals! Now tell pro tools where you want to record by enabling record.</p>
-                  <img 
-                     src="images/13Tracks created.png" 
-                     width="1200" 
-                     alt="Screenshot of Pro Tools session with one instumental track and multiple empty tracks."/>
-               </div>
-
-               <div id="enableRecording" class="step">
-
-                  <h2>Enable Recording</h2>
-   
-                <p class="directions">Press the red button with the white circle on the <em>Audio 1</em> 
-                     Track to set it as the destination for your new audio. Once you record somthing that you wish to keep, turn off <em>Audio 1</em> recording and <br>move on to <em>Audio 2</em>. Enabling record on the track sets the destination but we have to tell the session that it's time to record.</p>
-                  <img 
-                     src="images/14Track record Enabled.png" 
-                     width="1200" 
-                     alt="Screenshot of Audio one record light on."/>
-
-                  <p class="directions">Press the <em>Record</em> button with red circle on top of the screen to enable session recording. Finally your qued up and it's time.</p>
-                  <img 
-                     src="images/15Session record Enabled.png" 
-                     width="1200" 
-                     alt="Screenshot of both Track one, and Session record lights on."/>
-               </div>
-
-               <div id="record" class="step">
-   
-                  <h2>Record!</h2>
-
-                  <p class="directions">Press the <em>play</em> button located next to session record button or simply press the<em>Space Bar</em> 
-                     to start recording! <br>Note: <em>Space Bar</em> will also stop recording, as well as start and stop regular playback.</p>
-                  <img 
-                     src="images/16Session Recording.png" 
-                     width="1200" 
-                     alt="Screenshot Pro tools Session recording."/>
-               </div>
+               <p class="directions">Here is your session with the instrumental track! Next let's add some empty tracks for your voice.</p>
+               <img
+                  src="images/10Instrumental Imported.png" 
+                  width="1200" 
+                  alt="Screenshot of a Pro tools session with one instumental track."/>
             </div>
-            <br>
+   
+            <div id="createTracks" class="step">
+
+               <h2>Create New Tracks</h2>
+
+               <p class="directions">To create more tracks for you to record on navigate to the <em>Track</em> menu at the top of the page. Then click <em>New</em>.</p>
+               <img
+                  src="images/11Creating New Tracks.png" 
+                  width="1200" 
+                  alt="Screenshot navigating through Track to New."/>
+
+               <p class="directions">Decide on the number of tracks to create and set appropriate parameters. Click <em>Create</em>.</p>
+               <img
+                  src="images/12New Track Options.png" 
+                  width="1200" 
+                  alt="Screenshot of New tracks window."/>
+
+               <p class="directions">Here is your session ready for vocals! Now tell pro tools where you want to record by enabling record.</p>
+               <img  
+                  src="images/13Tracks created.png" 
+                  width="1200" 
+                  alt="Screenshot of Pro Tools session with one instumental track and multiple empty tracks."/>
+            </div>
+
+            <div id="enableRecording" class="step">
+
+               <h2>Enable Recording</h2>
+   
+               <p class="directions">Press the red button with the white circle on the <em>Audio 1</em> 
+                  Track to set it as the destination for your new audio. Once you record somthing that you wish to keep, you would disenable <em>Audio 1</em> recording and enable <em>Audio 2</em>. Enabling record on the track sets the destination but we have to tell the session that it's time to record.</p>
+               <img 
+                  src="images/14Track record Enabled.png" 
+                  width="1200" 
+                  alt="Screenshot of Audio one record light on."/>
+
+               <p class="directions">Press the <em>Record</em> button with red circle on top of the screen to enable session recording. Finally your qued up and it's time.</p>
+               <img
+                  src="images/15Session record Enabled.png" 
+                  width="1200" 
+                  alt="Screenshot of both Track one, and Session record lights on."/>
+            </div>
+
+            <div id="record" class="step">
+   
+               <h2>Record!</h2>
+
+               <p class="directions">Press the <em>play</em> button located next to session record button or simply press the <em>Space Bar</em> 
+                  to start recording! <br>Note: <em>Space Bar</em> will also stop recording, as well as start and stop regular playback.</p>
+               <img
+                  src="images/16Session Recording.png" 
+                  width="1200" 
+                  alt="Screenshot Pro tools Session recording."/>
+            </div>
+         </div>
+
+
+         <div id="conclusion">
+
+            <p id="outro" class="funParagraph">We hope this quick ProTools&reg tutorial was helpful, Good Luck and we"ll be sure to keep an ear out for you!<br>
+               The ironically silent video below is the same process in action.
+            </p>
+
+         </div>
+
+      </article>
+
+   
+      <div id="videoTutorial" class="video">
             
-            <div id="videoTutorial" class="video">
-               
-               <h2>Video Tutorial</h2>
-               
-               <video 
-               src="First Pro-Tools session tutorial.mp4" 
-               width="1600" 
-               controls muted>
-            </video>
-            
-            </div>
-            <br>
-         
-            <div id="conclusion">
+         <h1 id="videoTitle">Video Tutorial</h1>
+             
+         <video 
+            src="First Pro-Tools session tutorial.mp4" 
+            width="1600" 
+            controls muted>
+         </video>
+      </div>
+                     
+   </main>
 
-               <p class="funParagraph">We hope this tutorial was helpful, Good Luck and we"ll be sure to keep an ear out for your next hit!</p>
 
-            </div>
+   <footer>
+     <p> <a href="#top">Return to Top</a><br>&copy; 2024<br> Pro-Tools<sup>&reg;</sup> is a Registered Trademark of Avid Technology, INC.</p>
+   </footer>
 
-         </article>
-      </main>
-      <footer>
-         <p> <a href="#top">Return to Top</a><br>&copy 2024 Pro-Tools<sup>&reg</sup> is a Registered Trademark of Avid Technology, INC</p>
-      </footer>
-   </body>
+</body>
 </html>
